@@ -3,8 +3,8 @@ from django.http import HttpResponse
 from django.views.generic import View,TemplateView
 # Create your views here.
 def hii(request):
-    import datetime
-    d=datetime.datetime.now()
-    s=f"<h1>hello world  {str(d)} </h1>"
+    import calendar
+    d=calendar.month(2001,9)
+    s=f"<h1>{str(d)} </h1>"
     return HttpResponse(s)
 
